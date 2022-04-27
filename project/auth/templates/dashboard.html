@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container alight-text-center">
+        <table class="table">
+                <thead>
+                        <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Form Name</th>
+                                <th scope="col">Latest Submission</th>
+                                <th scope="col">Latest Result</th>
+                        </tr>
+                </thead>
+                <tbody>
+                        {% for data in render_data %}
+                        <tr>
+                                <th scope="row">{{ data['TestID'] }}</th>
+                                <th class="col col-md-6 border border-secondary">
+                                        <a href="{{ url_for('forms.getFormbyID', TestID = data['TestID'] ) }}">
+                                                {{ data['Description'] or 'N/A'}}
+                                        </a>
+                                </th>
+                                <th class="col col-md-3 border border-secondary">{{ data['Date'] or 'N/A'}}</th>
+                                <th class="col col-md-3 border border-secondary">{{ data['Score'] or 'N/A'}}</th>
+                        </tr>
+                        {% endfor %}
+                </tbody>
+        </table>
+</div>
+
+{% endblock %}

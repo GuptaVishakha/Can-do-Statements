@@ -5,10 +5,10 @@ import os
 def create_app():
 
     app = Flask(__name__)
-    # app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://root:root@localhost/cando"
-    app.config["SQLALCHEMY_DATABASE_URI"] = (
-        "mysql://dev:voter_portal#" "@localhost/can_do"
-    )
+    app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://root:root@localhost/cando"
+    # app.config["SQLALCHEMY_DATABASE_URI"] = (
+    #     "mysql://dev:voter_portal#" "@localhost/can_do"
+    # )
     app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = "False"
     app.config["SECRET_KEY"] = str(os.urandom(12).hex())
 

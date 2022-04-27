@@ -1,0 +1,618 @@
+{% extends 'base.html' %}
+<!--Bootstrap link: https://mdbootstrap.com/docs/standard/forms/input-fields/-->
+{% block content %}
+
+<div class="container">
+
+    <div class="text-center">
+        <h1>09. Advanced High Can-Do Statements</h1>
+        <h3 class="text-muted">49 Points</h3>
+    </div>
+
+
+    <div class="lead">
+        <!-- justify doesn't work from bootstrap 5.0 onwards. Please use linked styles.css -->
+        <p class="text-justify">
+            The NCSSFL-ACTFL Can-Do Statements are self-assessment checklists used by language learners to assess
+            what they “can do” with language in the Interpersonal, Interpretive, and Presentational modes of
+            communication. Ultimately, the goal for all language learners is to develop a functional use of another
+            language for one’s personal contexts and purposes. Use the checklist that will follow in a series of
+            quizzes to record what you think you can do in the target language. You may realize that your
+            progression may not be the same for each mode: Interpersonal, Interpretive, or Presentational. This is
+            to be completely expected. For example, you may progress more quickly in Interpretive Reading than in
+            Interpersonal Communication. To begin, you'll start the process with the lowest level of proficiency and
+            work your way up from there. Make sure to be honest with yourself so you can best assess your own
+            abilities in your target language.
+        </p>
+    </div>
+
+
+    <!-- Create Form -->
+    <hr>
+    <div class="text-center">
+        <p class="h3">Interpersonal Communication: Advanced High</p>
+        <p>I can express myself freely and spontaneously, and for the most part accurately,
+            on concrete topics and on most complex issues. I can usually support my opinion
+            and develop hypotheses on topics of particular interest or personal expertise.
+        </p>
+    </div>
+    <hr>
+    <div class="row justify-content-md-center">
+        <div class="col-sm-8">
+            <div class="form-group px-4">
+                <form id="form" method="POST">
+                    <div class="card">
+                        <div class="card-header">
+                            <p class="fw-bold>">Q1</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-title fw-bold">
+                                I can exchange complex information about academic and professional tasks.
+                            </p>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Q1a">
+                                    <input type="checkbox" name="inp-checkbox-response" id="Q1a">
+                                    I can exchange complex information about my academic studies, such as why I chose
+                                    the field,
+                                    course requirements, projects, internship opportunities, and new advances in my
+                                    field.
+                                    </input>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Q1b">
+                                    <input type="checkbox" name="inp-checkbox-response" id="Q1b">
+                                    I can exchange complex information about my work responsibilities, such as the
+                                    hiring process,
+                                    my work schedule, the nature of my tasks, how I interface with other employees,
+                                    opportunities
+                                    for advancement, and new directions in my field.
+                                    </input>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Q1c">
+                                    <input type="checkbox" name="inp-checkbox-response" id="Q1c">
+                                    I can exchange complex professional or academic information to engage in
+                                    collaborative work with my
+                                    counterparts in different regions or countries.
+                                    </input>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <p class="fw-bold>">Q2</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-title fw-bold">
+                                I can exchange detailed information on topics within and beyond my fields of interest.
+                            </p>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Q2a">
+                                    <input type="checkbox" name="inp-checkbox-response" id="Q2a">
+                                    I can exchange detailed information about my personal and professional interests.
+                                    </input>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Q2b">
+                                    <input type="checkbox" name="inp-checkbox-response" id="Q2b">
+                                    I can exchange detailed information on technological advances.
+                                    </input>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Q2c">
+                                    <input type="checkbox" name="inp-checkbox-response" id="Q2c">
+                                    I can participate in conversations on social or cultural questions relevant to
+                                    speakers of this language.
+                                    </input>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <p class="fw-bold>">Q3</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-title fw-bold">
+                                I can support my opinion and construct hypotheses.
+                            </p>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Q3a">
+                                    <input type="checkbox" name="inp-checkbox-response" id="Q3a">
+                                    I can give a supported argument about work-related processes that would benefit me
+                                    and my employer.
+                                    </input>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Q3b">
+                                    <input type="checkbox" name="inp-checkbox-response" id="Q3b">
+                                    I can give a supported argument about social reform, such as daycare and elder care.
+                                    </input>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Q3c">
+                                    <input type="checkbox" name="inp-checkbox-response" id="Q3c">
+                                    I can usually defend my views in a debate.
+                                    </input>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="text-center">
+                        <p class="h3">Presentational Speaking: Advanced High</p>
+                        <p>I can deliver detailed presentations, usually with accuracy, clarity, and precision,
+                            on a variety of topics and issues related to community interests and some special fields of
+                            expertise.
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="card">
+                        <div class="card-header">
+                            <p class="fw-bold>">Q4</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-title fw-bold">
+                                I can present complex information on many concrete topics and related issues.
+                            </p>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Q4a">
+                                    <input type="checkbox" name="inp-checkbox-response" id="Q4a">
+                                    I can deliver detailed and well-organized presentations about topics
+                                    I have studied, such as modern art or internet journalism.
+                                    </input>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Q4b">
+                                    <input type="checkbox" name="inp-checkbox-response" id="Q4b">
+                                    I can present complex information about my work responsibilities,
+                                    such as interfacing with other employees, and new directions in the field.
+                                    </input>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Q4c">
+                                    <input type="checkbox" name="inp-checkbox-response" id="Q4c">
+                                    I can give a presentation about cultural influences on society.
+                                    </input>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Q4d">
+                                    <input type="checkbox" name="inp-checkbox-response" id="Q4d">
+                                    I can speak about the details and value of an experiment I have performed.
+                                    </input>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Q4e">
+                                    <input type="checkbox" name="inp-checkbox-response" id="Q4e">
+                                    I can incorporate a variety of supporting media and materials such as statistics,
+                                    analyses, trends, polls, etc. into a presentation.
+                                    </input>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <p class="fw-bold>">Q5</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-title fw-bold">
+                                I can present a viewpoint with supporting arguments on a complex issue.
+                            </p>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Q5a">
+                                    <input type="checkbox" name="inp-checkbox-response" id="Q5a">
+                                    can present a detailed, supported argument about the need for
+                                    alternative energy sources or other environmental topics.
+                                    </input>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Q5b">
+                                    <input type="checkbox" name="inp-checkbox-response" id="Q5b">
+                                    I can clearly present a particular political viewpoint.e.
+                                    </input>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Q5c">
+                                    <input type="checkbox" name="inp-checkbox-response" id="Q5c">
+                                    I can present an argument in favor of an economic policy and support my opinion with
+                                    details.
+                                    </input>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Q5d">
+                                    <input type="checkbox" name="inp-checkbox-response" id="Q5d">
+                                    I can defend or challenge a controversial action taken by a person or a group.
+                                    </input>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <p class="fw-bold>">Q6</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-title fw-bold">
+                                I can use appropriate presentational conventions and strategies.
+                            </p>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Q6a">
+                                    <input type="checkbox" name="inp-checkbox-response" id="Q6a">
+                                    I can incorporate some appropriate idiomatic and culturally authentic expressions
+                                    and behaviors in my presentation.
+                                    </input>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Q6b">
+                                    <input type="checkbox" name="inp-checkbox-response" id="Q6b">
+                                    I can express my viewpoints using expressions appropriate for the target language
+                                    and culture.
+                                    </input>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Q6c">
+                                    <input type="checkbox" name="inp-checkbox-response" id="Q6c">
+                                    I can deliver my presentation appropriate to the formality of the setting.
+                                    </input>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="text-center">
+                        <p class="h3">Presentational Writing: Advanced High</p>
+                        <p>I can write extensively with significant precision and detail on a variety of topics,
+                            most complex issues, and some special fields of expertise.
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="card">
+                        <div class="card-header">
+                            <p class="fw-bold>">Q7</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-title fw-bold">
+                                I can write using target language and culture conventions to present and elaborate a
+                                point of view.
+                            </p>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Q7a">
+                                    <input type="checkbox" name="inp-checkbox-response" id="Q7a">
+                                    I can write a position paper on an issue I have researched or related to my field of
+                                    expertise.
+                                    </input>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Q7b">
+                                    <input type="checkbox" name="inp-checkbox-response" id="Q7b">
+                                    I can express a detailed point of view in a blog or other public forum.
+                                    </input>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Q7c">
+                                    <input type="checkbox" name="inp-checkbox-response" id="Q7c">
+                                    I can write an editorial piece in order to speculate on outcomes or implications of
+                                    an issue.
+                                    </input>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <p class="fw-bold>">Q8</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-title fw-bold">
+                                I can write using target language and culture conventions for informal purposes.
+                            </p>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Q8a">
+                                    <input type="checkbox" name="inp-checkbox-response" id="Q8a">
+                                    I can write a personal mission statement.
+                                    </input>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Q8b">
+                                    <input type="checkbox" name="inp-checkbox-response" id="Q8b">
+                                    I can write a statement of purpose related to my professional goals.
+                                    </input>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Q8c">
+                                    <input type="checkbox" name="inp-checkbox-response" id="Q8c">
+                                    I can write entries in a reflection journal.
+                                    </input>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <p class="fw-bold>">Q9</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-title fw-bold">
+                                I can write using target language and culture conventions for formal purposes.
+                            </p>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Q9a">
+                                    <input type="checkbox" name="inp-checkbox-response" id="Q9a">
+                                    I can write an in-depth research paper.
+                                    </input>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Q9b">
+                                    <input type="checkbox" name="inp-checkbox-response" id="Q9b">
+                                    I can write a policy statement.
+                                    </input>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Q9c">
+                                    <input type="checkbox" name="inp-checkbox-response" id="Q9c">
+                                    I can contribute to a strategic plan.
+                                    </input>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Q9d">
+                                    <input type="checkbox" name="inp-checkbox-response" id="Q9d">
+                                    I can create a professional portfolio.
+                                    </input>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="text-center">
+                        <p class="h3">Interpretive Listening: Advanced High</p>
+                        <p>I can easily follow narrative, informational, and descriptive speech.
+                            I can understand discussions on most topics that deal with special interests, unfamiliar
+                            situations,
+                            and abstract concepts. I can sometimes follow extended arguments and different points of
+                            view.
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="card">
+                        <div class="card-header">
+                            <p class="fw-bold>">Q10</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-title fw-bold">
+                                I can easily understand detailed reports and exposés.
+                            </p>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Q10a">
+                                    <input type="checkbox" name="inp-checkbox-response" id="Q10a">
+                                    I can understand an interview in which the relationship of texting and traffic
+                                    accidents
+                                    is detailed by victims' reports on their experiences.
+                                    </input>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Q10b">
+                                    <input type="checkbox" name="inp-checkbox-response" id="Q10b">
+                                    I can understand a radio report on the increased crime rate in the community
+                                    that includes descriptions of specific incidents of crime.
+                                    </input>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Q10c">
+                                    <input type="checkbox" name="inp-checkbox-response" id="Q10c">
+                                    I can understand a televised exposé on celebrities or heroes.
+                                    </input>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <p class="fw-bold>">Q11</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-title fw-bold">
+                                I can often understand various viewpoints in extended arguments.
+                            </p>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Q11a">
+                                    <input type="checkbox" name="inp-checkbox-response" id="Q11a">u
+                                    I can follow the argument when students debate the advantages and disadvantages
+                                    of study abroad supported by examples of their personal experiences.
+                                    </input>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Q11b">
+                                    <input type="checkbox" name="inp-checkbox-response" id="Q11b">
+                                    I can understand the main points made in a conversation I overhear where two people
+                                    are arguing the pros and cons of social networking.
+                                    </input>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Q11c">
+                                    <input type="checkbox" name="inp-checkbox-response" id="Q11c">
+                                    I can understand a YouTube debate on the legal age of drinking.
+                                    </input>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <p class="fw-bold>">Q12</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-title fw-bold">
+                                I can understand discussions and presentations on many concrete or abstract topics.
+                            </p>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Q12a">
+                                    <input type="checkbox" name="inp-checkbox-response" id="Q12a">
+                                    I can understand the benefits of marathon running as detailed in a podcast.
+                                    </input>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Q12b">
+                                    <input type="checkbox" name="inp-checkbox-response" id="Q12b">
+                                    I can understand many points made in a YouTube presentation advocating for changes
+                                    to immigration laws.
+                                    </input>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Q12c">
+                                    <input type="checkbox" name="inp-checkbox-response" id="Q12c">
+                                    I can understand a group leader's justification for protesting a cut in programs.
+                                    </input>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="text-center">
+                        <p class="h3">Interpretive Reading: Advanced High</p>
+                        <p>
+                            I can easily follow narrative, informational, and descriptive texts. I can understand what I
+                            read
+                            on topics that deal with specific interests, unfamiliar situations, and abstract concepts.
+                            I can sometimes understand extended arguments and different points of view.
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="card">
+                        <div class="card-header">
+                            <p class="fw-bold>">Q13</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-title fw-bold">
+                                I can understand narrative, descriptive, and informational texts of any length.
+                            </p>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Q13a">
+                                    <input type="checkbox" name="inp-checkbox-response" id="Q13a">
+                                    I can understand a detailed account of a unique travel or cultural experience.
+                                    </input>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Q13b">
+                                    <input type="checkbox" name="inp-checkbox-response" id="Q13b">
+                                    I can understand the minutes of a student club meeting that describes new by-laws.
+                                    </input>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Q13c">
+                                    <input type="checkbox" name="inp-checkbox-response" id="Q13c">
+                                    I can understand the new perspectives of a musical group in an article that
+                                    describes the direction taken in their latest CD.
+                                    </input>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Q13d">
+                                    <input type="checkbox" name="inp-checkbox-response" id="Q13d">
+                                    I can understand most documents outlining rules and regulations, such as an
+                                    apartment rental contract.
+                                    </input>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <p class="fw-bold>">Q14</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-title fw-bold">
+                                I can read about most topics of special interest.
+                            </p>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Q14a">
+                                    <input type="checkbox" name="inp-checkbox-response" id="Q14a">
+                                    I can understand a report that describes policy changes, for example,
+                                    related to admission into a program or changes to social networking platforms.
+                                    </input>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Q14b">
+                                    <input type="checkbox" name="inp-checkbox-response" id="Q14b">
+                                    I can follow the reporting of national or international news,
+                                    such as an election, a natural disaster, or civil unrest.
+                                    </input>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <p class="fw-bold>">Q15</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-title fw-bold">
+                                I can read most general fiction and non-fiction.
+                            </p>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Q15a">
+                                    <input type="checkbox" name="inp-checkbox-response" id="Q15a">
+                                    I can understand most short stories, plays, and novels.
+                                    </input>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Q15b">
+                                    <input type="checkbox" name="inp-checkbox-response" id="Q15b">
+                                    I can understand most inferences and allusions.
+                                    </input>
+                                    </la bel>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Q15c">
+                                    <input type="checkbox" name="inp-checkbox-response" id="Q15c">
+                                    I can understand non-fiction texts that are specialized and complex in nature,
+                                    such as essays, documentaries, technical documentation, etc.
+                                    </input>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-footer text-end">
+                            <button type="submit" value="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

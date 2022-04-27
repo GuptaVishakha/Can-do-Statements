@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{%block title %}Login{% endblock %}
+
+{% block content %}
+
+<div class="container mt-5 mb-5">
+    <div class="row">
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <ul class="flashes">
+            <div class="d-flex col col-sm-12 justify-content-center">
+                {% for message in messages %}
+                <div class="alert alert-warning " role="alert">{{ message }}</div>
+                {% endfor %}
+            </div>
+        </ul>
+        {% endif %}
+        {% endwith %}
+    </div>
+    <div class="row">
+        <div class="d-flex col col-sm-12 justify-content-center">
+            <h1>Login</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="d-flex col col-sm-12 justify-content-center">
+            <form method="POST">
+                <div class="form-group">
+                    <label for="HawkID">HawkID</label>
+                    <input type="text" name="HawkID" class="form-control" id="HawkID" placeholder="Enter your HawkID">
+                </div>
+                <div class="row">
+                    <div class="col col-sm-6 justify-content-center">
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </div>
+                    <div class="col col-sm-6 justify-content-center">
+                        <a class="btn btn-secondary" href="{{ url_for('register.registration') }}">Register</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

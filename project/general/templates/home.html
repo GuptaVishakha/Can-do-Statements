@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{%block title %}Login{% endblock %}
+
+{% block content %}
+
+<div class="container mt-5 mb-5">
+    <div class="row">
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <ul class="flashes">
+            <div class="d-flex col col-sm-12 justify-content-center">
+                {% for message in messages %}
+                <div class="alert alert-warning " role="alert">{{ message }}</div>
+                {% endfor %}
+            </div>
+        </ul>
+        {% endif %}
+        {% endwith %}
+    </div>
+    <div class="row">
+        <div class="d-flex justify-content-center justify-text-center">
+
+            {% if session.HawkID %}
+            <div class="card">
+                <div class="card-header fw-bold text-center">
+                    Welcome! {{ username }}
+                </div>
+                <div class="card-body text-center">
+                    <a href="{{url_for('auth.dashboard')}}">Proceed to Forms</a>
+                </div>
+            </div>
+            {% else %}
+            <div class="card">
+                <div class="card-header fw-bold text-center">
+                    Welcome!
+                </div>
+                <div class="card-body text-center">
+                    <a href="{{url_for('auth.login')}}">Please login</a>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

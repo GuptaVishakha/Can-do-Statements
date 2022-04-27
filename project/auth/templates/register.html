@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+<!--Bootstrap link: https://mdbootstrap.com/docs/standard/forms/input-fields/-->
+{% block content %}
+<div class="container">
+  <div class="row">
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul class="flashes">
+      <div class="d-flex col col-sm-12 justify-content-center">
+        {% for message in messages %}
+        <div class="alert alert-warning " role="alert">{{ message }}</div>
+        {% endfor %}
+      </div>
+    </ul>
+    {% endif %}
+    {% endwith %}
+  </div>
+  <div class="row">
+    <div class="d-flex justify-content-center">
+      <form method="POST">
+        <div class="form-group">
+          <label for="HawkID">Hawk Id: </label>
+          <input id="HawkID" name="HawkID" type="text" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="FirstName">First Name: </label>
+          <input id="FirstName" name="FirstName" type="text" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="LastName">Last Name: </label>
+          <input id="LastName" name="LastName" type="text" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="Department">Department: </label>
+          <input id="Department" name="Department" type="text" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="CourseEnrolled">Course Enrolled: </label>
+          <input id="CourseEnrolled" name="CourseEnrolled" type="text" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="Role">Role: </label>
+          <select id="Role" name="Role">
+            <option value="Student">Student</option>
+            <option value="TeachingAssistant">Teaching Assistant</option>
+            <option value="Professor">Professor</option>
+            <option value="Admin">Admin</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}
